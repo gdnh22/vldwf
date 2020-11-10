@@ -28,6 +28,8 @@ public:
 // 实现
 
 	DECLARE_MESSAGE_MAP()
+
+	int ReadDB();
 };
 
 extern Cvlddemovs2019App theApp;

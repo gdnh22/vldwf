@@ -7,6 +7,9 @@ framework.h vld.h
 | framework.h         | +vld.h                    |      |
 | vld_dlg.cpp         | new char[124]             |      |
 | vld_demo_vs2019.cpp | google::InitGoogleLogging |      |
+| vld_demo_vs2019.cpp | SetRegistryKey            |      |
+| vld_demo_vs2019.cpp | +sqlitecpp                |      |
+| vld_demo_vs2019.cpp | sqlite3.lib               |      |
 
 
 

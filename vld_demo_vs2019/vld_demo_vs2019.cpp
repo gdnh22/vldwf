@@ -77,7 +77,9 @@ BOOL Cvlddemovs2019App::InitInstance()
 	// 更改用于存储设置的注册表项
 	// TODO: 应适当修改该字符串，
 	// 例如修改为公司或组织名
-	SetRegistryKey(_T("应用程序向导生成的本地应用程序"));
+	SetRegistryKey(_T("regist yqs ctp sys"));	//tag01
+
+	ReadDB();
 
 	Cvlddemovs2019Dlg dlg;
 	m_pMainWnd = &dlg;
@@ -111,5 +113,12 @@ BOOL Cvlddemovs2019App::InitInstance()
 	// 由于对话框已关闭，所以将返回 FALSE 以便退出应用程序，
 	//  而不是启动应用程序的消息泵。
 	return FALSE;
+}
+
+int Cvlddemovs2019App::ReadDB()
+{
+	int nRet(0);
+
+	return nRet;
 }
 

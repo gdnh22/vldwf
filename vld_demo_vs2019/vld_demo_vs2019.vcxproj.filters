@@ -13,6 +13,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="sqlitecpp">
+      <UniqueIdentifier>{80cf6eeb-2b30-4516-93a4-69534764828e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sqlitecpp\header">
+      <UniqueIdentifier>{38e11805-d205-4d1e-85b3-66c316d92e7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sqlitecpp\src">
+      <UniqueIdentifier>{b21674a2-03f4-4d5c-beab-5aa8921efc63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sqlitecpp\sqlite3">
+      <UniqueIdentifier>{2f3502bb-3fd4-405e-9149-2d7e8d32822e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="vld_demo_vs2019.h">
@@ -48,6 +60,42 @@
     <ClInclude Include="..\glog\vlog_is_on.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="..\sqlitecpp\Assertion.h">
+      <Filter>sqlitecpp\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlitecpp\Backup.h">
+      <Filter>sqlitecpp\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlitecpp\Column.h">
+      <Filter>sqlitecpp\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlitecpp\Database.h">
+      <Filter>sqlitecpp\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlitecpp\Exception.h">
+      <Filter>sqlitecpp\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlitecpp\ExecuteMany.h">
+      <Filter>sqlitecpp\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlitecpp\SQLiteCpp.h">
+      <Filter>sqlitecpp\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlitecpp\Statement.h">
+      <Filter>sqlitecpp\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlitecpp\Transaction.h">
+      <Filter>sqlitecpp\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlitecpp\Utils.h">
+      <Filter>sqlitecpp\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlitecpp\VariadicBind.h">
+      <Filter>sqlitecpp\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SQLite\sqlite3.h">
+      <Filter>sqlitecpp\sqlite3</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="vld_demo_vs2019.cpp">
@@ -58,6 +106,24 @@
     </ClCompile>
     <ClCompile Include="pch.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlitecpp\src\Backup.cpp">
+      <Filter>sqlitecpp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlitecpp\src\Column.cpp">
+      <Filter>sqlitecpp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlitecpp\src\Database.cpp">
+      <Filter>sqlitecpp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlitecpp\src\Exception.cpp">
+      <Filter>sqlitecpp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlitecpp\src\Statement.cpp">
+      <Filter>sqlitecpp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlitecpp\src\Transaction.cpp">
+      <Filter>sqlitecpp\src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

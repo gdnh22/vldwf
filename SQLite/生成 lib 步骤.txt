@@ -1,0 +1,28 @@
+1、下载：
+	sqlite-amalgamation-3320300.zip		 (包含文件：shell.c, sqlite3.c, sqlite3.h, sqlite3ext.h)
+	(2.30 MiB) 		C source code as an amalgamation, version 3.32.3.
+
+	sqlite-dll-win64-x64-3320300.zip		 (包含文件：sqlite3.def, sqlite3.dll)
+	(807.17 KiB) 		64-bit DLL (x64) for SQLite version 3.32.3.
+
+
+2、统一保存到一个 SQLLITE  目录中：
+
+3、然后，从：
+	C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin
+	从以上目录复制以下文件到SQLLITE 目录中
+	lib.exe 
+	link.exe 
+	mspdb120.dll
+
+4、进入：SQLLITE  目录：
+	cd H:\MyCTPSystem6.3(64)_2013(MBCS)\MyCTPSystem\SQLite>
+	执行：LIB /DEF:sqlite3.def /MACHINE:X64
+
+	          或：LIB /DEF:sqlite3.def /machine:IX86 产生32位文件
+
+
+
+
+
+

@@ -16,6 +16,8 @@
 #include "glog\\logging.h"
 #pragma comment(lib, "glog_x64d.lib")
 
+#pragma comment(lib, "sqlite3.lib")
+
 #include <afxwin.h>         // MFC 核心组件和标准组件
 #include <afxext.h>         // MFC 扩展
 

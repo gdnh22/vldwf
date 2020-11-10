@@ -119,15 +119,15 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <TreatWarningAsError>true</TreatWarningAsError>
-      <AdditionalIncludeDirectories>C:\cpp\visual_leak_detector\include;$(SolutionDir);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\cpp\visual_leak_detector\include;$(SolutionDir);$(SolutionDir)sqlite;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
-      <AdditionalLibraryDirectories>C:\cpp\visual_leak_detector\lib\Win64;$(SolutionDir)glog\lib\x64;</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\cpp\visual_leak_detector\lib\Win64;$(SolutionDir)glog\lib\x64;$(SolutionDir)sqlite;</AdditionalLibraryDirectories>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -198,6 +198,18 @@
     <ClInclude Include="..\glog\raw_logging.h" />
     <ClInclude Include="..\glog\stl_logging.h" />
     <ClInclude Include="..\glog\vlog_is_on.h" />
+    <ClInclude Include="..\sqlitecpp\Assertion.h" />
+    <ClInclude Include="..\sqlitecpp\Backup.h" />
+    <ClInclude Include="..\sqlitecpp\Column.h" />
+    <ClInclude Include="..\sqlitecpp\Database.h" />
+    <ClInclude Include="..\sqlitecpp\Exception.h" />
+    <ClInclude Include="..\sqlitecpp\ExecuteMany.h" />
+    <ClInclude Include="..\sqlitecpp\SQLiteCpp.h" />
+    <ClInclude Include="..\sqlitecpp\Statement.h" />
+    <ClInclude Include="..\sqlitecpp\Transaction.h" />
+    <ClInclude Include="..\sqlitecpp\Utils.h" />
+    <ClInclude Include="..\sqlitecpp\VariadicBind.h" />
+    <ClInclude Include="..\SQLite\sqlite3.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
@@ -206,6 +218,24 @@
     <ClInclude Include="vld_demo_vs2019Dlg.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\sqlitecpp\src\Backup.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\sqlitecpp\src\Column.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\sqlitecpp\src\Database.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\sqlitecpp\src\Exception.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\sqlitecpp\src\Statement.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\sqlitecpp\src\Transaction.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
