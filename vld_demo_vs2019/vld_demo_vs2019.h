@@ -18,7 +18,8 @@
 class Cvlddemovs2019App : public CWinApp
 {
 public:
-	Cvlddemovs2019App();
+	Cvlddemovs2019App(); 
+	~Cvlddemovs2019App();
 
 // 重写
 public:

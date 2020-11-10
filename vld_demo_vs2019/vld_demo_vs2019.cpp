@@ -28,8 +28,16 @@ Cvlddemovs2019App::Cvlddemovs2019App()
 
 	// TODO: 在此处添加构造代码，
 	// 将所有重要的初始化放置在 InitInstance 中
+	google::InitGoogleLogging("vlddemo");
+	google::SetLogDestination(google::GLOG_ERROR, ".\\logwf\\vlddemo");
+
 }
 
+
+Cvlddemovs2019App::~Cvlddemovs2019App()
+{
+	google::ShutdownGoogleLogging();
+}
 
 // 唯一的 Cvlddemovs2019App 对象
 
